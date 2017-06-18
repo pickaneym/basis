@@ -1,0 +1,48 @@
+{
+  "name": "STIHL-Reparturen",
+  "author": "Edmon Villanueva",
+  "description": "A simple react to-do list",
+  "setup": "Mobile First",
+  "cssComponentPrefix" : "sr-",
+  "colorReferences":[ 
+      { 
+         "background" : [
+            "#ffff", "#000"
+         ]
+      },
+      { 
+         "text" : [
+            "#ffff", "#000"
+         ]
+      },
+           { 
+         "button" : [
+            "#ffff", "#000"
+         ]
+      }
+  ],
+  "fonts" : [
+    { 
+       "name" : "Open-Sans",
+       "importUrl" : "@import url('https://fonts.googleapis.com/css?family=Open+Sans');",
+       "defaultFont" : true,
+       "defaultSize" : "16px"
+    }
+  ],
+  "flexClasses": true,
+  "layoutClasses" : {
+     "h1" : {
+        "font-size" : "24px"
+     },
+     "h2" : {
+        "font-size" : "24px"
+     },
+  },
+ "componentClasses" : {
+    "sr-btn" : {
+       "width" : "200px",
+       "height" : "50px"
+    } 
+ }
+}
+

@@ -14,9 +14,7 @@
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
-      "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
-      "testTsconfig": "tsconfig.spec.json",
       "prefix": "bsis",
       "styles": [
         "styles.css"
@@ -29,11 +27,6 @@
       }
     }
   ],
-  "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
-  },
   "lint": [
     {
       "project": "src/tsconfig.app.json"
@@ -45,13 +38,25 @@
       "project": "e2e/tsconfig.e2e.json"
     }
   ],
-  "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
-  },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "module": {
+      "spec": false
+    },
+    "component": {
+      "spec": false
+    },
+    "directive": {
+      "spec": false
+    },
+    "service": {
+      "spec": false
+    },
+    "pipe": {
+      "spec": false
+    },
+    "guard": {
+      "spec": false
+    }
   }
 }

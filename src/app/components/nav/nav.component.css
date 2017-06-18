@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+#bsis-logo {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    font-weight:700;
+    margin-right: 10px;
+}
+
+#bsis-nav md-toolbar{
+    background: #0B1A6B;
+}

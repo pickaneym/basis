@@ -1,0 +1,21 @@
+<section id="bsis-stylesheet-info">
+    <strong class="section-title">Stylesheet Information</strong>
+    <div class="form-container">
+        <md-input-container class="example-full-width">
+            <input mdInput placeholder="Project Name">
+        </md-input-container>
+        <md-input-container class="example-full-width">
+            <textarea mdInput placeholder="Description"></textarea>
+        </md-input-container>
+        <md-input-container class="example-full-width">
+            <input mdInput placeholder="Author">
+        </md-input-container>
+        <md-input-container class="example-full-width">
+            <input mdInput placeholder="CSS Component Prefix (eg. kem-)">
+        </md-input-container>
+        <md-select placeholder="Layout Setup" [(ngModel)]="selectedValue" class="example-full-width">
+            <md-option>Mobile First</md-option>
+            <md-option>Desktop First</md-option>
+        </md-select>
+    </div>
+</section>

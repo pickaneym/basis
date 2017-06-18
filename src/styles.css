@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+input{
+    color : #333 !important;
+}
+
+#bsis-root{
+    background-color: #fff;
+    min-height:500px;
+    width:700px;
+}
+
+#bsis-main{
+
+}
+
+#bsis-main .section-title{
+    background-color: #2137AA;
+    color:#fff;
+    display: block;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#bsis-main section{
+    min-height:300px;
+}
+
+#bsis-main .form-container{
+    padding: 15px;
+}
+
+.form-container .example-full-width {
+    width: 100%;
+}
+
+
+
+/**
+* @Override
+*/
+.mat-input-infix,
+.mat-select-placeholder{
+    font-size: 14px;
+}
