@@ -1,13 +1,13 @@
 <div id="bsis-root" class="mat-app-background">
-    <bsis-nav></bsis-nav>
-    <main id="bsis-main">
-        <form [formGroup]="bsisForm" (ngSubmit)="save()">
-            <bsis-stylesheet-info [bsisForm]="bsisForm" [stylesheetInfo]="basis.stylesheetInfo"></bsis-stylesheet-info>
-            <bsis-core-styles></bsis-core-styles>
-            <bsis-color-references></bsis-color-references>
-            <bsis-dependencies></bsis-dependencies>
-            <bsis-extras></bsis-extras>
-            <button type="submit" >Submit</button>
-        </form>
-    </main>
+  <bsis-nav></bsis-nav>
+  <main id="bsis-main">
+    <form [formGroup]="bsisForm" (ngSubmit)="save()">
+      <bsis-stylesheet-info [bsisForm]="bsisForm" [stylesheetInfo]="basis.stylesheetInfo"></bsis-stylesheet-info>
+      <bsis-core-styles></bsis-core-styles>
+      <bsis-color-references></bsis-color-references>
+      <bsis-dependencies></bsis-dependencies>
+      <bsis-extras></bsis-extras>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 </div>
