@@ -1,21 +1,20 @@
 <section id="bsis-stylesheet-info">
     <strong class="section-title">Stylesheet Information</strong>
-    <div class="form-container">
+    <div class="form-container" [formGroup]="stylesheetInfoForm">
         <md-input-container class="example-full-width">
-            <input mdInput placeholder="Project Name">
+            <input mdInput placeholder="Project Name" formControlName="name">
         </md-input-container>
         <md-input-container class="example-full-width">
-            <textarea mdInput placeholder="Description"></textarea>
+            <textarea mdInput placeholder="Description" formControlName="description"></textarea>
         </md-input-container>
         <md-input-container class="example-full-width">
-            <input mdInput placeholder="Author">
+            <input mdInput placeholder="Author" formControlName="author">
         </md-input-container>
         <md-input-container class="example-full-width">
-            <input mdInput placeholder="CSS Component Prefix (eg. kem-)">
+            <input mdInput placeholder="CSS Component Prefix (eg. kem-)" formControlName="cssComponentPrefix">
         </md-input-container>
-        <md-select placeholder="Layout Setup" [(ngModel)]="selectedValue" class="example-full-width">
-            <md-option>Mobile First</md-option>
-            <md-option>Desktop First</md-option>
+        <md-select placeholder="Layout Setup" class="example-full-width" formControlName="setup">
+            <md-option *ngFor="let option of setupOptions" [value]="option">{{ option.name}}</md-option>
         </md-select>
     </div>
 </section>

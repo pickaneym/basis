@@ -50,6 +50,7 @@ input{
 * @Override
 */
 .mat-input-infix,
-.mat-select-placeholder{
+.mat-select-placeholder,
+.mat-select-value-text{
     font-size: 14px;
 }

@@ -1,26 +1,26 @@
 <nav id="bsis-nav">
-  <md-toolbar color="primary">
+    <md-toolbar color="primary">
     <span id="bsis-logo">
       Bsis</span>
-    <md-icon>flag</md-icon>
-    <span class="example-spacer"></span>
-    <button id="bsis-menu-btn" md-button [mdMenuTriggerFor]="bsisMenu">
-      <md-icon>menu</md-icon>
-    </button>
-  </md-toolbar>
+        <md-icon>flag</md-icon>
+        <span class="example-spacer"></span>
+        <button id="bsis-menu-btn" md-button [mdMenuTriggerFor]="bsisMenu">
+            <md-icon>menu</md-icon>
+        </button>
+    </md-toolbar>
+    <md-menu id="bsis-menu" #bsisMenu="mdMenu">
+        <button md-menu-item>
+            <md-icon>dialpad</md-icon>
+            <span>Redial</span>
+        </button>
+        <button md-menu-item disabled>
+            <md-icon>voicemail</md-icon>
+            <span>Check voicemail</span>
+        </button>
+        <button md-menu-item>
+            <md-icon>notifications_off</md-icon>
+            <span>Disable alerts</span>
+        </button>
+    </md-menu>
 </nav>
 
-<md-menu id="bsis-menu" #bsisMenu="mdMenu">
-  <button md-menu-item>
-    <md-icon>dialpad</md-icon>
-    <span>Redial</span>
-  </button>
-  <button md-menu-item disabled>
-    <md-icon>voicemail</md-icon>
-    <span>Check voicemail</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>notifications_off</md-icon>
-    <span>Disable alerts</span>
-  </button>
-</md-menu>

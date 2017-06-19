@@ -2,6 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AppRoutingModule} from './app-routing.module';
 import {
     MdButtonModule,
     MdIconModule,
@@ -14,14 +15,14 @@ import {
 } from '@angular/material';
 
 
-import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NavComponent} from './components/nav/nav.component';
-import { StylesheetInfoComponent } from './components/stylesheet-info/stylesheet-info.component';
-import { CoreStylesComponent } from './components/core-styles/core-styles.component';
-import { ColorReferencesComponent } from './components/color-references/color-references.component';
-import { ExtrasComponent } from './components/extras/extras.component';
-import { DependenciesComponent } from './components/dependencies/dependencies.component';
+import {StylesheetInfoComponent} from './components/stylesheet-info/stylesheet-info.component';
+import {CoreStylesComponent} from './components/core-styles/core-styles.component';
+import {ColorReferencesComponent} from './components/color-references/color-references.component';
+import {ExtrasComponent} from './components/extras/extras.component';
+import {DependenciesComponent} from './components/dependencies/dependencies.component';
+import {BasisService} from "./services/basis.service";
 
 @NgModule({
     declarations: [
@@ -48,7 +49,7 @@ import { DependenciesComponent } from './components/dependencies/dependencies.co
         MdMenuModule,
         MdToolbarModule
     ],
-    providers: [],
+    providers: [BasisService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
