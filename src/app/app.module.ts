@@ -13,14 +13,16 @@ import {
 
 
 import {AppComponent} from './app.component';
+import {AppConfigModule} from '../config/app-config.module';
 import {CoreModule} from './core/core.module';
-import {AppRoutingModule} from './app-routing.module';
+
 
 import {StylesheetInfoComponent} from './components/stylesheet-info/stylesheet-info.component';
 import {CoreStylesComponent} from './components/core-styles/core-styles.component';
 import {ColorReferencesComponent} from './components/color-references/color-references.component';
 import {ExtrasComponent} from './components/extras/extras.component';
 import {DependenciesComponent} from './components/dependencies/dependencies.component';
+
 
 
 @NgModule({
@@ -34,7 +36,7 @@ import {DependenciesComponent} from './components/dependencies/dependencies.comp
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
+        AppConfigModule,
         CoreModule,
         FormsModule,
         ReactiveFormsModule,
