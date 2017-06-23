@@ -1,6 +1,6 @@
 import {InjectionToken} from '@angular/core';
 import {Restangular} from 'ngx-restangular';
-import {GOOGLE_FONTS_API_KEY} from '../../google-fonts-api.key';
+import {GOOGLE_FONTS_API_KEY} from '../google-fonts-api.key';
 
 import {RestangularConfigurer} from 'ngx-restangular/dist/esm/src/ngx-restangular-config.factory';
 

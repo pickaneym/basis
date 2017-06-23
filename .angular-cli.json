@@ -17,7 +17,7 @@
       "tsconfig": "tsconfig.app.json",
       "prefix": "bsis",
       "styles": [
-        "styles.css"
+        "assets/css/styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

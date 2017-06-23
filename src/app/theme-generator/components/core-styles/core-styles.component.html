@@ -1,0 +1,13 @@
+<section id="bsis-core-styles">
+  <strong class="section-title">Core Styles</strong>
+  <div class="form-container">
+    <ng-select [allowClear]="true"
+               [items]="fonts"
+               (data)="refreshValue($event)"
+               (selected)="selected($event)"
+               (removed)="removed($event)"
+               (typed)="typed($event)"
+               placeholder="Select Project Font from Google">
+    </ng-select>
+  </div>
+</section>

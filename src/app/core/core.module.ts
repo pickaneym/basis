@@ -6,9 +6,7 @@ import {
     MdToolbarModule
 } from '@angular/material';
 
-import {NavComponent} from '../components/nav/nav.component';
-import {BasisService} from '../services/basis.service';
-import {GoogleFontsService} from '../services/google-fonts.service';
+import {NavComponent} from './nav.component';
 
 @NgModule({
     declarations: [NavComponent],
@@ -19,7 +17,7 @@ import {GoogleFontsService} from '../services/google-fonts.service';
         MdToolbarModule
     ],
     exports: [NavComponent],
-    providers: [BasisService, GoogleFontsService]
+    providers: []
 })
 
 // Do put a singleton service whose instance will be shared throughout the application here
