@@ -11,6 +11,7 @@ import {
     MdSelectModule
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
+import {ThemeGeneratorRoutingModule} from './theme-generator.routing';
 
 import {BasisService} from './services/basis.service';
 import {GoogleFontsService} from './services/google-fonts.service';
@@ -22,6 +23,7 @@ import {ExtrasComponent} from './components/extras/extras.component';
 import {ThemeGeneratorComponent} from './theme-generator.component';
 
 
+
 @NgModule({
     declarations: [
         ThemeGeneratorComponent,
@@ -29,21 +31,20 @@ import {ThemeGeneratorComponent} from './theme-generator.component';
         CoreStylesComponent,
         ColorReferencesComponent,
         DependenciesComponent,
-        ExtrasComponent,
-        ThemeGeneratorComponent
+        ExtrasComponent
     ],
     imports: [
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        BrowserAnimationsModule,
         MdButtonModule,
         MdIconModule,
         MdCheckboxModule,
         MdInputModule,
         MdRadioModule,
         MdSelectModule,
-        SelectModule
+        SelectModule,
+        ThemeGeneratorRoutingModule
     ],
     exports: [
         ThemeGeneratorComponent,

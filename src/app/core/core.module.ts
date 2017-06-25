@@ -6,10 +6,11 @@ import {
     MdToolbarModule
 } from '@angular/material';
 
-import {NavComponent} from './nav.component';
+import {NavComponent} from './nav/nav.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-    declarations: [NavComponent],
+    declarations: [NavComponent, PageNotFoundComponent],
     imports: [
         CommonModule,
         MdIconModule,

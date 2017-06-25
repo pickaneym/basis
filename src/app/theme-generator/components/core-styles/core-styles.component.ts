@@ -10,7 +10,7 @@ export class CoreStylesComponent implements OnInit {
 
     private value: any = {};
 
-    private fonts: Array<Object>;
+    fonts: Array<Object>;
 
     constructor(private GoogleFontsService: GoogleFontsService) {
     }
