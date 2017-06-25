@@ -17,7 +17,7 @@ export class AuthService implements CanActivate, AuthServiceInterface {
     APP_TOKEN: string;
 
     constructor(private router: Router) {
-        this.APP_TOKEN_KEY = 'bsis-token';
+        this.APP_TOKEN_KEY = 'bsis.token';
         this.APP_TOKEN = localStorage.getItem(this.APP_TOKEN_KEY);
         // Have an option to set the request config default header here :D
     }

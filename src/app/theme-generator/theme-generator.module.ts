@@ -46,14 +46,7 @@ import {ThemeGeneratorComponent} from './theme-generator.component';
         SelectModule,
         ThemeGeneratorRoutingModule
     ],
-    exports: [
-        ThemeGeneratorComponent,
-        StylesheetInfoComponent,
-        CoreStylesComponent,
-        ColorReferencesComponent,
-        DependenciesComponent,
-        ExtrasComponent
-    ],
+    exports: [],
     providers: [BasisService, GoogleFontsService]
 })
 export class ThemeGeneratorModule {
