@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
     MdButtonModule,
     MdIconModule,
@@ -11,7 +10,6 @@ import {
     MdSelectModule
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
-import {ThemeGeneratorRoutingModule} from './theme-generator.routing';
 
 import {BasisService} from './services/basis.service';
 import {GoogleFontsService} from './services/google-fonts.service';
@@ -21,8 +19,7 @@ import {ColorReferencesComponent} from './components/color-references/color-refe
 import {DependenciesComponent} from './components/dependencies/dependencies.component';
 import {ExtrasComponent} from './components/extras/extras.component';
 import {ThemeGeneratorComponent} from './theme-generator.component';
-
-
+import {ThemeGeneratorRoutingModule} from './theme-generator.routing';
 
 @NgModule({
     declarations: [
