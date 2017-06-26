@@ -2,7 +2,6 @@ import {Inject, Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {GOOGLE_FONTS_API} from '../../../config/requests/google-fonts-api-request.config';
 
-
 @Injectable()
 export class GoogleFontsService {
 

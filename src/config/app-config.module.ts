@@ -7,13 +7,11 @@ import {AppAuthModule} from './auth/app-auth.module';
 
 @NgModule({
     imports: [
-        CommonModule,
         AppAuthModule,
         AppRequestsModule,
         AppRoutingModule
-
     ],
-    exports: [RouterModule, AppRequestsModule, AppAuthModule],
+    exports: [RouterModule],
     declarations: []
 })
 export class AppConfigModule {
