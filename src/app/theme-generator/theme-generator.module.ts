@@ -11,24 +11,16 @@ import {
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
 
-import {BasisService} from './services/basis.service';
-import {GoogleFontsService} from './services/google-fonts.service';
-import {StylesheetInfoComponent} from './components/stylesheet-info/stylesheet-info.component';
-import {CoreStylesComponent} from './components/core-styles/core-styles.component';
-import {ColorReferencesComponent} from './components/color-references/color-references.component';
-import {DependenciesComponent} from './components/dependencies/dependencies.component';
-import {ExtrasComponent} from './components/extras/extras.component';
-import {ThemeGeneratorComponent} from './theme-generator.component';
-import {ThemeGeneratorRoutingModule} from './theme-generator.routing';
+import * as tg from './barrel';
 
 @NgModule({
     declarations: [
-        ThemeGeneratorComponent,
-        StylesheetInfoComponent,
-        CoreStylesComponent,
-        ColorReferencesComponent,
-        DependenciesComponent,
-        ExtrasComponent
+        tg.ThemeGeneratorComponent,
+        tg.StylesheetInfoComponent,
+        tg.CoreStylesComponent,
+        tg.ColorReferencesComponent,
+        tg.DependenciesComponent,
+        tg.ExtrasComponent
     ],
     imports: [
         CommonModule,
@@ -41,10 +33,10 @@ import {ThemeGeneratorRoutingModule} from './theme-generator.routing';
         MdRadioModule,
         MdSelectModule,
         SelectModule,
-        ThemeGeneratorRoutingModule
+        tg.ThemeGeneratorRoutingModule
     ],
     exports: [],
-    providers: [BasisService, GoogleFontsService]
+    providers: [tg.BasisService, tg.GoogleFontsService]
 })
 export class ThemeGeneratorModule {
 }
