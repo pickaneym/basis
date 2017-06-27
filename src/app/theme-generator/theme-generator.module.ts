@@ -11,7 +11,7 @@ import {
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
 
-import * as tg from './barrel';
+import * as tg from './';
 
 @NgModule({
     declarations: [
@@ -36,7 +36,10 @@ import * as tg from './barrel';
         tg.ThemeGeneratorRoutingModule
     ],
     exports: [],
-    providers: [tg.BasisService, tg.GoogleFontsService]
+    providers: [
+        tg.BasisService,
+        tg.GoogleFontsService
+    ]
 })
 export class ThemeGeneratorModule {
 }

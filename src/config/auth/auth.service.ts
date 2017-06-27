@@ -6,7 +6,7 @@ export interface AuthServiceInterface {
     APP_TOKEN: string;
     isAuthorized(): boolean;
     authenticate(): void;
-    logout();
+    logout(): void;
     setToken(token: string): void;
     onCanActivate(canActivate: boolean): void;
 }
@@ -47,7 +47,7 @@ export class AuthService implements CanActivate, AuthServiceInterface {
         }
     }
 
-    logout() {
+    logout(): void {
         localStorage.removeItem(this.APP_TOKEN_KEY);
     }
 
