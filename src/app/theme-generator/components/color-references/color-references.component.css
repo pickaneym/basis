@@ -1,0 +1,39 @@
+#color-refs {
+    display: flex;
+}
+
+.color-type > strong {
+    display: block;
+    text-align: center;
+}
+
+.color-type-box {
+    border-right: 1px solid #d9d9d9;
+}
+
+.color-type {
+    min-height: 200px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.color-type:last-child {
+    border-right: 0;
+}
+
+.add-color-btn {
+    bottom: 0;
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: #0B1A6B;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.add-color-btn span {
+    position: relative !important;
+    left: -6px !important;
+}

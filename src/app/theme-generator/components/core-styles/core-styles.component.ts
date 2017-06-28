@@ -41,6 +41,8 @@ export class CoreStylesComponent implements OnInit {
                         importUrl: false,
                         download: false
                     });
+
+                    this.fontVariants = [];
                 }
             });
     }
@@ -65,9 +67,9 @@ export class CoreStylesComponent implements OnInit {
         return this.fb.group({
             font: [model.font || null],
             variants: [model.variants || null],
-            fontType: [model.fontType || 'default-font', Validators.required],
-            importUrl: [model.importUrl || false, Validators.required],
-            download: [model.download || false, Validators.required]
+            fontType: [model.fontType || 'default-font'],
+            importUrl: [model.importUrl || false],
+            download: [model.download || false]
         })
     }
 
