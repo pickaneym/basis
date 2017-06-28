@@ -37,3 +37,14 @@
     position: relative !important;
     left: -6px !important;
 }
+
+.remove-color-btn{
+    position: absolute;
+    right: -5px;
+    font-size: 23px;
+    color: red;
+    top: 2px;
+    font-weight: 700;
+    background: none;
+    border: none;
+}
