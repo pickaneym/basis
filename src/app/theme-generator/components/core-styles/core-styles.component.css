@@ -1,0 +1,19 @@
+#bsis-core-styles {
+    min-height: auto;
+}
+
+.font-options {
+    margin-top: 15px;
+}
+
+.import-type {
+    display: block;
+}
+
+.font-type {
+    margin-right: 50px;
+}
+
+#variants {
+    min-height: 150px;
+}

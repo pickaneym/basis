@@ -1,5 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {GoogleFontsService} from '../../services/google-fonts.service';
+import {Component, Input, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
+import {GoogleFontsService} from '../../services/fonts.service';
+import {CoreStyles} from '../../models/core-style.model';
 
 @Component({
     selector: 'bsis-core-styles',
@@ -7,40 +10,73 @@ import {GoogleFontsService} from '../../services/google-fonts.service';
     styleUrls: ['./core-styles.component.css']
 })
 export class CoreStylesComponent implements OnInit {
+    @Input() bsisForm: FormGroup;
+    @Input() coreStyles: CoreStyles;
+    coreStylesForm: FormGroup;
+    googleFonts: Array<object>;
+    fontVariants: Array<string>;
+    fontOptions: boolean;
 
-    private value: any = {};
-
-    fonts: Array<Object>;
-
-    constructor(private GoogleFontsService: GoogleFontsService) {
+    constructor(private fb: FormBuilder, private fontService: GoogleFontsService) {
+        this.getGoogleFonts();
+        this.fontVariants = [];
+        this.fontOptions = false;
     }
 
     ngOnInit() {
-        this.GoogleFontsService.getAllFonts()
-            .subscribe((data) => {
-                console.log(data);
-                this.fonts = data.items.map((item) => {
-                    return {
-                        id: item.family,
-                        text: item.family
-                    }
-                });
+        this.initCoreStylesForm();
+        this.onFontChange();
+        this.onFontTypeChange();
+    }
+
+    private onFontTypeChange() {
+        this.coreStylesForm.get('fontType').valueChanges
+            .subscribe(fontType => {
+                this.fontOptions = fontType === 'google-font';
+
+                if (fontType === 'default-font') {
+                    this.coreStylesForm.patchValue({
+                        font: null,
+                        variants: null,
+                        importUrl: false,
+                        download: false
+                    });
+                }
             });
     }
 
-    public selected(value: any): void {
-        console.log('Selected value is: ', value);
+    private onFontChange() {
+        this.coreStylesForm.get('font').valueChanges
+            .subscribe(font => {
+                if (font === null) {
+                    return;
+                }
+
+                this.fontVariants = font.variants;
+            });
     }
 
-    public removed(value: any): void {
-        console.log('Removed value is: ', value);
+    private initCoreStylesForm() {
+        this.coreStylesForm = this.coreStylesToFormGroup(this.coreStyles);
+        this.bsisForm.addControl('coreStyles', this.coreStylesForm);
     }
 
-    public typed(value: any): void {
-        console.log('New search input: ', value);
+    private coreStylesToFormGroup(model: CoreStyles) {
+        return this.fb.group({
+            font: [model.font || null],
+            variants: [model.variants || null],
+            fontType: [model.fontType || 'default-font', Validators.required],
+            importUrl: [model.importUrl || false, Validators.required],
+            download: [model.download || false, Validators.required]
+        })
     }
 
-    public refreshValue(value: any): void {
-        this.value = value;
+    private getGoogleFonts(): void {
+        this.fontService.getGoogleFonts()
+            .subscribe(fonts => {
+                console.log(fonts);
+                this.googleFonts = fonts.items;
+            });
     }
+
 }

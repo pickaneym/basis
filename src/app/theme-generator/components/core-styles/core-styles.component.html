@@ -1,13 +1,34 @@
 <section id="bsis-core-styles">
   <strong class="section-title">Core Styles</strong>
-  <div class="form-container">
-    <ng-select [allowClear]="true"
-               [items]="fonts"
-               (data)="refreshValue($event)"
-               (selected)="selected($event)"
-               (removed)="removed($event)"
-               (typed)="typed($event)"
-               placeholder="Select Project Font from Google">
-    </ng-select>
+  <div class="form-container" [formGroup]="coreStylesForm">
+    <md-radio-group class="font-type-group" formControlName="fontType">
+      <md-radio-button class="font-type" value="google-font">Use google fonts</md-radio-button>
+      <md-radio-button class="font-type" value="default-font">Use default font</md-radio-button>
+    </md-radio-group>
+    <div class="row font-options" [hidden]="!fontOptions">
+      <div class="col-xs-12">
+        <select class="form-control" formControlName="font">
+          <option class="hidden" [value]="null" disabled>Choose a google font</option>
+          <option *ngFor="let font of googleFonts" [ngValue]="font">
+            {{ font.family }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="row font-options" [hidden]="!fontOptions">
+      <div class="col-xs-6">
+        <select id="variants" class="form-control" multiple formControlName="variants">
+          <option value="Choose a font variant" disabled>Choose a font variant</option>
+          <option *ngFor="let variant of fontVariants">
+            {{ variant }}
+          </option>
+        </select>
+      </div>
+      <div class="col-xs-6">
+        <md-checkbox class="import-type" formControlName="importUrl">Use import url</md-checkbox>
+        <md-checkbox class="import-type" formControlName="download">Download font (ttf)</md-checkbox>
+      </div>
+    </div>
+
   </div>
 </section>

@@ -9,7 +9,7 @@ export class GoogleFontsService {
     constructor(@Inject(GOOGLE_FONTS_API) public GoogleFontsApi) {
     }
 
-    getAllFonts(): Observable<any> {
+    getGoogleFonts(): Observable<any> {
         return this.GoogleFontsApi
             .one('webfonts')
             .get();

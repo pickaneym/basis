@@ -1,5 +1,5 @@
 export * from './services/basis.service';
-export * from './services/google-fonts.service';
+export * from './services/fonts.service';
 export * from './components/stylesheet-info/stylesheet-info.component';
 export * from './components/core-styles/core-styles.component';
 export * from './components/color-references/color-references.component';

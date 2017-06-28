@@ -11,7 +11,7 @@ import {
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
 
-import * as tg from './';
+import * as tg from './'; // Import from barrel
 
 @NgModule({
     declarations: [

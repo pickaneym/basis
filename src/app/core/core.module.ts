@@ -2,6 +2,7 @@ import {NgModule, Optional, SkipSelf} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {
+    MdButtonModule,
     MdIconModule,
     MdMenuModule,
     MdToolbarModule
@@ -16,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         CommonModule,
         MdIconModule,
         MdMenuModule,
+        MdButtonModule,
         MdToolbarModule,
         RouterModule
     ],

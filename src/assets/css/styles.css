@@ -2,41 +2,46 @@
 @import '../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body{
+body {
     background-color: lightgray;
     display: flex;
     justify-content: center;
     padding: 50px 0;
 }
 
-input{
-    color : #333 !important;
+input {
+    color: #333 !important;
 }
 
-#bsis-root{
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+#bsis-root {
     background-color: #fff;
-    min-height:500px;
-    width:700px;
+    min-height: 500px;
+    width: 700px;
 }
 
-#bsis-main{
+#bsis-main {
 
 }
 
-#bsis-main .section-title{
+#bsis-main .section-title {
     background-color: #2137AA;
-    color:#fff;
+    color: #fff;
     display: block;
     font-family: 'Reenie Beanie', cursive;
     font-size: 20px;
     padding: 15px;
 }
 
-#bsis-main section{
-    min-height:300px;
+#bsis-main section {
+    min-height: 300px;
 }
 
-#bsis-main .form-container{
+#bsis-main .form-container {
     padding: 15px;
 }
 
@@ -44,13 +49,11 @@ input{
     width: 100%;
 }
 
-
-
 /**
 * @Override
 */
 .mat-input-infix,
 .mat-select-placeholder,
-.mat-select-value-text{
+.mat-select-value-text {
     font-size: 14px;
 }
