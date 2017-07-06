@@ -1,5 +1,5 @@
 export class CoreStyles {
-    font: object;
+    font: any;
     variants: Array<string>;
     fontType: string;
     importUrl: boolean;

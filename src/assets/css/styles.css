@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600,700,800');
 
 body {
     background-color: lightgray;
@@ -29,6 +30,10 @@ a:hover {
 
 }
 
+#bsis-main md-checkbox {
+    display: block;
+}
+
 #bsis-main .section-title {
     background-color: #2137AA;
     color: #fff;
@@ -36,10 +41,6 @@ a:hover {
     font-family: 'Reenie Beanie', cursive;
     font-size: 20px;
     padding: 15px;
-}
-
-#bsis-main section {
-    min-height: 300px;
 }
 
 #bsis-main .form-container {

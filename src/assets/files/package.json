@@ -1,0 +1,24 @@
+{
+  "name": "kemmlit-kemsys-web-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp-watch": "gulp watch",
+    "gulp-build": "gulp build",
+    "gulp": "gulp"
+  },
+  "authors": [
+    "Allan Crisostomo <allan.crisostomo@ffuf.de>",
+    "Emmanuel Campos <emmanuel.campos@ffuf.de>",
+    "Edmon Villanueva <edmon.villanueva@ffuf.de"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}

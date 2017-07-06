@@ -1,8 +1,8 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-import {SetupOption, StyleSheetInfo} from '../../models/stylesheet-info.model';
-import {BasisService} from '../../services/basis.service';
+import {SetupOption, StyleSheetInfo} from '../models/stylesheet-info.model';
+import {BasisService} from '../services/basis.service';
 
 @Component({
     selector: 'bsis-stylesheet-info',

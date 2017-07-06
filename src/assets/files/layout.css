@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+|--------------------------------------------------------------------------
+| Stylesheet Information                                                  
+|--------------------------------------------------------------------------
+|                                                                         
+| Project Layout Name: STIHL-Reparaturen                                  
+| Author: Edmon Villanueva                                                
+| Description: 
+| Layout Setup: Mobile First
+| Project CSS Component Prefix: sr-*
+|
+|--------------------------------------------------------------------------
+|                             Color Reference
+|--------------------------------------------------------------------------
+|      Background       |        Text           |         Button
+|--------------------------------------------------------------------------
+| #232C33               |      #F10002          | #F37A1F
+| #656C71               |                       | #9EA2A5
+| #D3D5D6               |                       | 
+| #F10002               |                       | 
+|--------------------------------------------------------------------------
+*/
+
+
+body{
+   font-size: 16px; 
+   font-family: 'Opens-Sans' sans-serif;
+}
+
+h1{
+   
+}
+
+h2{
+   
+}
+
+h3{
+   
+}
+
+h4{
+   
+}
+
+h5{
+   
+}
+
+small{
+   
+}
+
+strong{
+   
+}
+
+a{
+   text-decoration: none;
+   color: #fff;
+}
+
+a:hover{
+   text-decoration: none;
+}
+
+
+button:focus,
+input:focus,
+textarea:focus,
+a:focus{
+   outline: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Background color classes
+|--------------------------------------------------------------------------
+*/
+
+.bg-one{
+   /* bg for header */
+   background-color: #232C33;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Text color classes
+|--------------------------------------------------------------------------
+*/
+
+.color-one{
+   
+}
+
+/*
+|--------------------------------------------------------------------------
+| Button/Link  classes
+|--------------------------------------------------------------------------
+*/
+
+button.color-one:hover,
+button.color-one:focus{
+   color: #fff;
+}
+
+button.bg-one:hover,
+button.color-one:focus{
+   background-color: #fff; 
+}
+
+a.color-one:hover,
+a.color-one:focus{
+   color: #fff;
+}
+
+a.bg-one,
+a.color-one:focus{
+   background-color: #fff; 
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Custom Layout Classes
+|--------------------------------------------------------------------------
+|
+| Write your own project layout css here! 
+| EG. #sr-wrapper, .sr-box, #sr-category-box
+|
+*/
+
+.sr-btn{
+   width: inherit; 
+   height: inherit; 
+}
+

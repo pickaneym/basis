@@ -11,7 +11,8 @@ import {
 } from '@angular/material';
 import {SelectModule} from 'ng2-select';
 
-import * as tg from './'; // Import from barrel
+import * as tg from './';
+import {HttpModule} from '@angular/http'; // Import from barrel
 
 @NgModule({
     declarations: [
@@ -33,6 +34,7 @@ import * as tg from './'; // Import from barrel
         MdRadioModule,
         MdSelectModule,
         SelectModule,
+        HttpModule,
         tg.ThemeGeneratorRoutingModule
     ],
     exports: [],

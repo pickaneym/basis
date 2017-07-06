@@ -1,0 +1,10 @@
+#bsis-footer {
+    text-align: center;
+    padding: 35px;
+}
+
+#generate-bsis-btn{
+    background-color: #0B1A6B;
+    color: #fff;
+    text-transform: uppercase;
+}

@@ -1,3 +1,4 @@
+export let tpl = `
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*
@@ -211,4 +212,4 @@ a.color-one:focus{
    width: inherit; 
    height: inherit; 
 }
-
+`;

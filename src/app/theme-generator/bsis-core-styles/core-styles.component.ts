@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-import {GoogleFontsService} from '../../services/fonts.service';
-import {CoreStyles} from '../../models/core-style.model';
+import {GoogleFontsService} from '../services/fonts.service';
+import {CoreStyles} from '../models/core-style.model';
 
 @Component({
     selector: 'bsis-core-styles',

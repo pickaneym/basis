@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, FormArray} from '@angular/forms';
 
-import {ColorRefs} from '../../models/color-ref.model';
-import {NumberToWordService} from '../../services/number-to-word-converter.service';
+import {ColorRefs} from '../models/color-ref.model';
+import {NumberToWordService} from '../services/number-to-word-converter.service';
 
 @Component({
     selector: 'bsis-color-references',

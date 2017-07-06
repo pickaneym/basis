@@ -1,0 +1,67 @@
+{
+  "name": "kemmlit-kemsys-web-client",
+  "authors": [
+    "Allan Crisostomo <allan.crisostomo@ffuf.de>",
+    "Emmanuel Campos <emmanuel.campos@ffuf.de>",
+    "Edmon Villanueva <edmon.villanueva@ffuf.de"
+  ],
+  "description": "",
+  "main": "",
+  "license": "UNLICENSED",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mousetrap": "^1.6.0",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-filter": "^0.5.11",
+    "angular-local-storage": "^0.5.2",
+    "angular-bootstrap": "^2.2.0",
+    "ngLocale": "*",
+    "angular-sanitize": "^1.5.8",
+    "moment": "^2.15.2",
+    "angular-ui-select": "^0.19.6",
+    "restangular": "^1.6.0",
+    "angular-ui-router": "1.0.0-beta.3",
+    "angular-paginator": "git@bitbucket.org:FFUF/ffuf-kemsys-angular-paginator.git#~1.0.0",
+    "oatmeal": "git@bitbucket.org:FFUF/ffuf-kemsys-oatmeal.git#~1.0.0",
+    "jquery-paginator": "git@bitbucket.org:FFUF/ffuf-kemsys-jquery-paginator.git#~1.0.1",
+    "bluebird": "^3.4.7",
+    "jquery-ui": "^1.12.1"
+  },
+  "install": {
+    "path": "assets/components",
+    "sources": {
+      "bootstrap": "bower_components/bootstrap/dist/**",
+      "mousetrap": "bower_components/mousetrap/**",
+      "font-awesome": "bower_components/font-awesome/**",
+      "restangular": "bower_components/restangular/dist/**",
+      "angular": "bower_components/angular/**",
+      "angular-filter": "bower_components/angular-filter/dist/**",
+      "angular-local-storage": "bower_components/angular-local-storage/dist/**",
+      "angular-bootstrap": "bower_components/angular-bootstrap/**",
+      "ngLocale": "bower_components/ngLocale/**",
+      "angular-sanitize": "bower_components/angular-sanitize/**",
+      "moment": "bower_components/moment/min/**",
+      "angular-ui-router": "bower_components/angular-ui-router/release/**",
+      "jquery-paginator": "bower_components/jquery-paginator/bin/**",
+      "angular-paginator": "bower_components/angular-paginator/bin/**",
+      "imagesloaded": "bower_components/imagesloaded/**",
+      "oatmeal": "bower_components/oatmeal/bin/**",
+      "bluebird": "bower_components/bluebird/js/browser/bluebird.min.js",
+      "angular-ui-select": "bower_components/angular-ui-select/dist/**",
+      "jquery-ui": "bower_components/jquery-ui/jquery-ui.min.js"
+    }
+  },
+  "resolutions": {
+    "angular": "^1.5.8"
+  }
+}
